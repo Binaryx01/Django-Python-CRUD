@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<h1>Hey Welcome to ViewData</h1>
+<h4>Here are the List of the students</h4>
+
+    {% for student in students %}
+        <h1>{{student.name}}</h1>
+        <h4>{{student.email}}</h4>
+        <a href="{% url 'edit_student' student.id %}" class="btn btn-secondary">Edit</a>
+        <a href="{% url 'delete_student' student.id%}" type="submit" class="btn btn-danger"
+        onclick="return confirm('Are you sure u want to delete this?');">Delete</a>
+        <hr/>
+    {% endfor %}
+{% endblock %}
