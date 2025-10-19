@@ -1,4 +1,4 @@
-<h1>Hey this is the first proejct I made in Django and Bootstrap</h1>
+<h1>Hey this is the first proejct I made in Django and Bootstrap and Mysql</h1>
 
 This is the homepage of this CRUD Application..
 
